@@ -563,8 +563,27 @@ a:hover {
 }
 
 .step-content h4 {
-    color: var(--primary-color);
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
+}
+
+.treatment-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.treatment-heading:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 0;
 }
 
 /* Sidebar Styles */
