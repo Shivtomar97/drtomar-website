@@ -4,8 +4,8 @@ This repository contains the redesigned version of Dr. Tomar's homeopathy websit
 
 ## Files Structure
 
-- `index-new.html` - The redesigned homepage
-- `cancer-new.html` - Example of a redesigned content page (Cancer Treatment)
+- `index.html` - The redesigned homepage
+- `cancer.html` - Example of a redesigned content page (Cancer Treatment)
 - `css/style.css` - Main stylesheet for the new design
 - `js/main.js` - JavaScript functionality for the redesigned website
 - `js/image-placeholder.js` - Utility script for placeholders until proper images are available
@@ -24,8 +24,8 @@ Ensure the following directory structure is in place:
 │   └── image-placeholder.js
 ├── images/
 │   └── [all existing images]
-├── index-new.html
-├── cancer-new.html
+├── index.html
+├── cancer.html
 └── [other content pages]
 ```
 
@@ -33,13 +33,13 @@ Ensure the following directory structure is in place:
 
 1. Back up your current website files
 2. Rename the following files:
-   - `index-new.html` → `index.html`
-   - `cancer-new.html` → `cancer.html`
+   - `index.html` → `index.html`
+   - `cancer.html` → `cancer.html`
 
 ### Step 3: Create Additional Content Pages
 
-Use the `cancer-new.html` as a template to redesign other content pages:
-1. Copy `cancer-new.html` to create new versions (e.g., `mnd-new.html`, `psoriasis-new.html`, etc.)
+Use the `cancer.html` as a template to redesign other content pages:
+1. Copy `cancer.html` to create new versions (e.g., `mnd.html`, `psoriasis.html`, etc.)
 2. Modify the content sections to match the original content from the old pages
 3. Update page titles, meta descriptions, and active navigation links
 

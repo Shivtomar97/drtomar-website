@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h4 class="footer-title">Quick Links</h4>
                         <ul class="footer-links">
-                            <li><a href="cancer-new.html">Cancer Treatment</a></li>
-                            <li><a href="mnd-new.html">MND Treatment</a></li>
-                            <li><a href="psoriasis-new.html">Psoriasis Treatment</a></li>
+                            <li><a href="cancer.html">Cancer Treatment</a></li>
+                            <li><a href="mnd.html">MND Treatment</a></li>
+                            <li><a href="psoriasis.html">Psoriasis Treatment</a></li>
                             <li><a href="testimonials.html">Success Stories</a></li>
                             <li><a href="contactus.html">Book Appointment</a></li>
                             <li><a href="disclaimer.html">Disclaimer</a></li>
