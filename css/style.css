@@ -1,0 +1,785 @@
+/* 
+ * Dr. Tomar Homeopathy Website
+ * Modern Redesign CSS
+ */
+
+/* Base Styles */
+:root {
+    --primary-color: #0080ff;
+    --secondary-color: #28A47B;
+    --text-color: #333;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --border-color: #dee2e6;
+    --shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Header */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.brand-name {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.brand-tagline {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.doctor-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 128, 255, 0.1);
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin-bottom: 2rem;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.hero-image-container {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.hero-image {
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* Hero Carousel */
+#heroCarousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+#heroCarousel .carousel-item {
+    height: 350px;
+}
+
+#heroCarousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#heroCarousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    bottom: 20px;
+    left: 10%;
+    right: 10%;
+}
+
+#heroCarousel .carousel-caption h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+}
+
+#heroCarousel .carousel-indicators {
+    bottom: 0;
+}
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+    width: 10%;
+}
+
+/* Make carousel captions visible on mobile */
+@media (max-width: 767px) {
+    #heroCarousel .carousel-caption {
+        display: block !important;
+        padding: 5px;
+    }
+    
+    #heroCarousel .carousel-caption h5 {
+        font-size: 0.8rem;
+    }
+    
+    #heroCarousel .carousel-item {
+        height: 250px;
+    }
+}
+
+/* Section Styles */
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Specialty Cards */
+.specialty-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.specialty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.specialty-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.specialty-desc {
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.specialty-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.specialty-link i {
+    margin-left: 0.5rem;
+    transition: var(--transition);
+}
+
+.specialty-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: var(--transition);
+}
+
+.testimonial-card.active,
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.testimonial-content:before {
+    content: '"';
+    font-family: 'Georgia', serif;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 5rem;
+    color: rgba(0, 128, 255, 0.1);
+    line-height: 1;
+}
+
+.testimonial-content p {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    padding: 1.5rem 2rem;
+    background-color: rgba(0, 128, 255, 0.05);
+    border-top: 1px solid rgba(0, 128, 255, 0.1);
+}
+
+.testimonial-author h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.testimonial-author p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 5rem 0;
+}
+
+.about-image {
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.about-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.contact-item h4 {
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.contact-item p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.contact-form-container {
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #212529;
+    color: #fff;
+}
+
+.footer-title {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #adb5bd;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.clinic-hours {
+    list-style: none;
+    padding-left: 0;
+}
+
+.clinic-hours li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: #adb5bd;
+}
+
+.clinic-hours li span {
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer-bottom {
+    color: #adb5bd;
+}
+
+/* Page Title Section */
+.page-title-section {
+    background-color: #f5f7fa;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: var(--primary-color);
+}
+
+.breadcrumb-item.active {
+    color: var(--secondary-color);
+}
+
+/* Content Cards */
+.content-card {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.content-title:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 0;
+}
+
+/* Cancer Type Cards */
+.cancer-type-card {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: 100%;
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.cancer-type-card:hover {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cancer-type-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.cancer-type-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Treatment Steps */
+.treatment-steps {
+    counter-reset: step-counter;
+}
+
+.treatment-step {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 2rem;
+    counter-increment: step-counter;
+}
+
+.step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.step-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Sidebar Styles */
+.sidebar-card {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.sidebar-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.doctor-sidebar-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid rgba(0, 128, 255, 0.2);
+}
+
+.doctor-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid rgba(0, 128, 255, 0.1);
+}
+
+.doctor-name {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.doctor-specialization {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Success Stories */
+.success-story {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+.success-story:hover {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.patient-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.patient-image-placeholder {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.patient-name {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    color: var(--primary-color);
+}
+
+.patient-condition {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.patient-quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Options */
+.contact-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-option i {
+    font-size: 1.2rem;
+}
+
+/* FAQ Accordion */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(0, 128, 255, 0.1);
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 128, 255, 0.25);
+}
+
+/* Benefits List */
+.benefit-item {
+    display: flex;
+    align-items: center;
+}
+
+.benefit-item i {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--primary-color);
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+/* Header Scrolled State */
+header.scrolled {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-title, .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-section, .page-title-section {
+        padding: 3rem 0;
+    }
+    
+    .section-title, .content-title {
+        font-size: 1.8rem;
+    }
+    
+    .cta-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title, .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-section {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .hero-image-container {
+        margin-top: 2rem;
+    }
+    
+    .section-title, .content-title {
+        font-size: 1.6rem;
+    }
+    
+    .specialty-card, .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-section {
+        text-align: center;
+    }
+    
+    .about-image {
+        margin-bottom: 2rem;
+    }
+    
+    .treatment-step {
+        padding-left: 50px;
+    }
+    
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+} 
