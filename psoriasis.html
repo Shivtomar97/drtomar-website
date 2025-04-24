@@ -78,6 +78,42 @@
         </div>
     </section>
 
+    <!-- Video Testimonials Section -->
+    <section class="video-testimonials-section py-3 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-3">
+                        <h3 class="section-title">Video Testimonials</h3>
+                    </div>
+                    
+                    <div class="row g-3 justify-content-center" id="videoGallery">
+                        <div class="col-md-8">
+                            <div class="video-card bg-white rounded shadow-sm" style="max-height: 320px;">
+                                <div class="row g-0">
+                                    <div class="col-md-5">
+                                        <div class="video-thumbnail position-relative h-100">
+                                            <img src="https://i3.ytimg.com/vi/nxgYeqnxep4/hqdefault.jpg" alt="Psoriasis Treatment Success" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                                            <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                                <i class="fas fa-play-circle fa-2x text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="video-info p-2">
+                                            <h5 class="mb-1 text-primary">Psoriasis Treatment Success</h5>
+                                            <p class="small mb-0">Patient shares their improvement with Dr. Tomar's homeopathic psoriasis treatment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Psoriasis Info Section -->
     <section class="psoriasis-info-section py-5">
         <div class="container">
@@ -381,53 +417,22 @@
         </div>
     </section>
     
-    <!-- Video Testimonials Section -->
-    <section class="video-testimonials-section py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section-header text-center mb-5">
-                        <h2 class="section-title">Video Testimonials</h2>
-                        <p class="section-subtitle">Watch our patients share their treatment journey and success stories</p>
-                    </div>
-                    
-                    <div class="row g-4" id="videoGallery">
-                        <div class="col-md-6 mx-auto">
-                            <div class="video-card bg-white rounded shadow-sm h-100">
-                                <div class="video-thumbnail position-relative">
-                                    <img src="https://i3.ytimg.com/vi/nxgYeqnxep4/hqdefault.jpg" alt="Psoriasis Treatment Success" class="img-fluid rounded-top w-100">
-                                    <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal1">
-                                        <i class="fas fa-play-circle fa-3x text-white"></i>
-                                    </a>
-                                </div>
-                                <div class="video-info p-3">
-                                    <h4>Psoriasis Treatment Success Story</h4>
-                                    <p>Watch this inspiring video of a patient who experienced significant improvement in their psoriasis condition through Dr. Tomar's homeopathic treatment approach.</p>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Psoriasis Treatment Success</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video1')"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="video1" src="https://www.youtube.com/embed/nxgYeqnxep4" title="YouTube video" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Video Modal -->
-        <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Psoriasis Treatment Success</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video1')"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ratio ratio-16x9">
-                            <iframe id="video1" src="https://www.youtube.com/embed/nxgYeqnxep4" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
     
     <!-- CTA Section -->
     <section class="cta-section py-5 bg-light">

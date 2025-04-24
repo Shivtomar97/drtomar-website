@@ -78,6 +78,63 @@
         </div>
     </section>
 
+    <!-- Video Testimonials Section -->
+    <section class="video-testimonials-section py-3 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-3">
+                        <h3 class="section-title">Video Testimonials</h3>
+                    </div>
+                    
+                    <div class="row g-3" id="videoGallery">
+                        <div class="col-md-6">
+                            <div class="video-card bg-white rounded shadow-sm h-100" style="max-height: 320px;">
+                                <div class="row g-0">
+                                    <div class="col-md-5">
+                                        <div class="video-thumbnail position-relative h-100">
+                                            <img src="https://i3.ytimg.com/vi/-wvoWMjspvE/hqdefault.jpg" alt="Cancer Patient Interview" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                                            <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                                <i class="fas fa-play-circle fa-2x text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="video-info p-2">
+                                            <h5 class="mb-1 text-primary">Dr. Tomar Interview</h5>
+                                            <p class="small mb-0">News feature with Dr. Tomar and patient discussing successful cancer treatment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="video-card bg-white rounded shadow-sm h-100" style="max-height: 320px;">
+                                <div class="row g-0">
+                                    <div class="col-md-5">
+                                        <div class="video-thumbnail position-relative h-100">
+                                            <img src="https://i3.ytimg.com/vi/NbSqViZjyxw/hqdefault.jpg" alt="Patient Success Story" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                                            <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                                                <i class="fas fa-play-circle fa-2x text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="video-info p-2">
+                                            <h5 class="mb-1 text-primary">Success Story</h5>
+                                            <p class="small mb-0">Patient shares experience with Dr. Tomar's homeopathic cancer treatment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Cancer Info Section -->
     <section class="cancer-info-section py-5">
         <div class="container">
@@ -419,84 +476,38 @@
         </div>
     </section>
 
-    <!-- Video Testimonials Section -->
-    <section class="video-testimonials-section py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section-header text-center mb-5">
-                        <h2 class="section-title">Video Testimonials</h2>
-                        <p class="section-subtitle">Watch our patients share their treatment journey and success stories</p>
-                    </div>
-                    
-                    <div class="row g-4" id="videoGallery">
-                        <div class="col-md-6">
-                            <div class="video-card bg-white rounded shadow-sm h-100">
-                                <div class="video-thumbnail position-relative">
-                                    <img src="https://i3.ytimg.com/vi/-wvoWMjspvE/hqdefault.jpg" alt="Cancer Patient Interview" class="img-fluid rounded-top w-100">
-                                    <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal1">
-                                        <i class="fas fa-play-circle fa-3x text-white"></i>
-                                    </a>
-                                </div>
-                                <div class="video-info p-3">
-                                    <h4>Dr. Tomar and Patient Interview (News Feature)</h4>
-                                    <p>Watch Dr. Tomar and his patient discuss their successful cancer treatment journey in this news feature.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="video-card bg-white rounded shadow-sm h-100">
-                                <div class="video-thumbnail position-relative">
-                                    <img src="https://i3.ytimg.com/vi/NbSqViZjyxw/hqdefault.jpg" alt="Patient Success Story" class="img-fluid rounded-top w-100">
-                                    <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal2">
-                                        <i class="fas fa-play-circle fa-3x text-white"></i>
-                                    </a>
-                                </div>
-                                <div class="video-info p-3">
-                                    <h4>Cancer Patient Success Story</h4>
-                                    <p>Hear directly from our patient about their experience with Dr. Tomar's homeopathic cancer treatment approach.</p>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Video Modals -->
+    <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cancer Treatment News Feature</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video1')"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="video1" src="https://www.youtube.com/embed/-wvoWMjspvE" title="YouTube video" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Video Modals -->
-        <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Cancer Treatment News Feature</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video1')"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ratio ratio-16x9">
-                            <iframe id="video1" src="https://www.youtube.com/embed/-wvoWMjspvE" title="YouTube video" allowfullscreen></iframe>
-                        </div>
+    <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Patient Testimonial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video2')"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="video2" src="https://www.youtube.com/embed/NbSqViZjyxw" title="YouTube video" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Patient Testimonial</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video2')"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ratio ratio-16x9">
-                            <iframe id="video2" src="https://www.youtube.com/embed/NbSqViZjyxw" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- CTA Section -->
     <section class="cta-section py-5 bg-light">
