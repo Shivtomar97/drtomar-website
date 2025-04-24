@@ -861,4 +861,16 @@ header.scrolled {
     margin-left: auto;
     position: relative;
     float: right;
+}
+
+/* Make specialty-list links unclickable but keep their appearance */
+.specialty-list a {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.specialty-list a:hover {
+    color: var(--primary-color);
 } 
