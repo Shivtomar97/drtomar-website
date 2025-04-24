@@ -849,4 +849,16 @@ header.scrolled {
         height: 35px;
         font-size: 1rem;
     }
+}
+
+/* Navbar Styles - Ensure hamburger is on right */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    position: relative;
+    float: right;
 } 
