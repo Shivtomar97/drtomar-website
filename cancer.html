@@ -419,6 +419,85 @@
         </div>
     </section>
 
+    <!-- Video Testimonials Section -->
+    <section class="video-testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title">Video Testimonials</h2>
+                        <p class="section-subtitle">Watch our patients share their treatment journey and success stories</p>
+                    </div>
+                    
+                    <div class="row g-4" id="videoGallery">
+                        <div class="col-md-6">
+                            <div class="video-card bg-white rounded shadow-sm h-100">
+                                <div class="video-thumbnail position-relative">
+                                    <img src="https://i3.ytimg.com/vi/-wvoWMjspvE/hqdefault.jpg" alt="Cancer Patient Interview" class="img-fluid rounded-top w-100">
+                                    <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                        <i class="fas fa-play-circle fa-3x text-white"></i>
+                                    </a>
+                                </div>
+                                <div class="video-info p-3">
+                                    <h4>Dr. Tomar and Patient Interview (News Feature)</h4>
+                                    <p>Watch Dr. Tomar and his patient discuss their successful cancer treatment journey in this news feature.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="video-card bg-white rounded shadow-sm h-100">
+                                <div class="video-thumbnail position-relative">
+                                    <img src="https://i3.ytimg.com/vi/NbSqViZjyxw/hqdefault.jpg" alt="Patient Success Story" class="img-fluid rounded-top w-100">
+                                    <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                                        <i class="fas fa-play-circle fa-3x text-white"></i>
+                                    </a>
+                                </div>
+                                <div class="video-info p-3">
+                                    <h4>Cancer Patient Success Story</h4>
+                                    <p>Hear directly from our patient about their experience with Dr. Tomar's homeopathic cancer treatment approach.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Modals -->
+        <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cancer Treatment News Feature</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video1')"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="video1" src="https://www.youtube.com/embed/-wvoWMjspvE" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Patient Testimonial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video2')"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="video2" src="https://www.youtube.com/embed/NbSqViZjyxw" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section py-5 bg-light">
         <div class="container">
@@ -444,5 +523,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/main.js"></script>
+    
+    <!-- Video Modal Script -->
+    <script>
+        // Function to stop YouTube video when modal is closed
+        function stopVideo(videoId) {
+            const iframe = document.getElementById(videoId);
+            const iframeSrc = iframe.src;
+            iframe.src = iframeSrc;
+        }
+        
+        // Stop all videos when any modal is closed
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('hidden.bs.modal', function () {
+                this.querySelectorAll('iframe').forEach(iframe => {
+                    const iframeSrc = iframe.src;
+                    iframe.src = iframeSrc;
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
