@@ -260,7 +260,12 @@
                         <div class="content-card bg-white p-4 rounded shadow-sm">
                             <div class="row">
                                 <div class="col-md-4 mb-3 mb-md-0">
-                                    <center><img src="images/paliwal.jpg" class="img-fluid rounded" alt="Prof. Paliwal"></center>
+                                    <div class="video-thumbnail position-relative">
+                                        <img src="https://i3.ytimg.com/vi/NbSqViZjyxw/hqdefault.jpg" alt="MND Patient Testimonial" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                                        <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal5">
+                                            <i class="fas fa-play-circle fa-2x text-white"></i>
+                                        </a>
+                                    </div>                                    
                                     <div class="patient-details text-center mt-3">
                                         <div class="patient-name">Prof. Paliwal</div>
                                         <div class="patient-condition text-muted">Liver Cancer</div>
@@ -286,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Testimonial 2 -->
                     <div class="success-story mb-5">
                         <div class="content-card bg-white p-4 rounded shadow-sm">
@@ -294,10 +299,11 @@
                                 <div class="col-md-4 mb-3 mb-md-0">
                                     <div class="video-thumbnail position-relative">
                                         <img src="https://i3.ytimg.com/vi/_i7EUGbCMFI/hqdefault.jpg" alt="MND Patient Testimonial" class="img-fluid rounded-start h-100" style="object-fit: cover;">
-                                        <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal5">
+                                        <a href="#" class="video-play-btn position-absolute" data-bs-toggle="modal" data-bs-target="#videoModal6">
                                             <i class="fas fa-play-circle fa-2x text-white"></i>
                                         </a>
-                                    </div>                                    <div class="patient-details text-center mt-3">
+                                    </div>                                    
+                                    <div class="patient-details text-center mt-3">
                                         <div class="patient-name">Khushbu Bhadoria</div>
                                         <div class="patient-condition text-muted">Squamous Cell Carcinoma Tumor</div>
                                     </div>
@@ -638,6 +644,22 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h5 class="modal-title">Liver Cancer Treatment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video2')"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="video2" src="https://www.youtube.com/embed/NbSqViZjyxw" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h5 class="modal-title">Squamous Cell Carcinoma Treatment</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo('video2')"></button>
                 </div>
@@ -649,6 +671,8 @@
             </div>
         </div>
     </div>
+
+    
 
     
 
