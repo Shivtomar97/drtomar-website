@@ -922,3 +922,15 @@ header.scrolled {
     height: 22px;
     width: auto;
   }
+
+  .share-story-section .btn-light {
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.share-story-section .btn-light:hover {
+  background-color: #fff;
+  color: #007bff;
+  transform: translateY(-2px);
+}
