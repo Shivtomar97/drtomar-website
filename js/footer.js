@@ -8,14 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
         <footer class="footer py-5">
             <div class="container">
                 <div class="row">
+                    <!-- About Section -->
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h4 class="footer-title">Dr. Tomar's Homeopathy Center</h4>
-                        <p>Providing advanced homeopathic treatment for complex conditions with proven success rates.</p>
-                        <div class="social-icons mt-3">
-                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <p>
+                        Providing advanced homeopathic treatment for complex conditions with
+                        proven success rates.
+                        </p>
+                       <div class="youtube-highlight mt-4 text-center text-lg-start">
+                        <a href="https://www.youtube.com/@doctortomar/featured"
+                            target="_blank"
+                            class="youtube-outline-btn d-inline-flex align-items-center justify-content-center">
+                            <img src="images/youtube-logo.png" alt="YouTube" class="me-2 youtube-logo">
+                            <span>Watch Patient Stories on YouTube</span>
+                        </a>
                         </div>
                     </div>
                     

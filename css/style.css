@@ -884,3 +884,41 @@ header.scrolled {
     transform: scale(1.04);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   }
+
+  .youtube-banner {
+    background-color: #ff0000;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(255, 0, 0, 0.3);
+  }
+  
+  .youtube-banner:hover {
+    background-color: #e60000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.4);
+  }
+
+  .youtube-outline-btn {
+    background-color: #222;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+  }
+  
+  .youtube-outline-btn:hover {
+    border-color: #ff0000;
+    color: #ff0000 !important;
+  }
+  
+  .youtube-logo {
+    height: 22px;
+    width: auto;
+  }
